@@ -8,6 +8,7 @@ import { UserCircleIcon } from './components/icons/UserCircleIcon';
 import { DocumentTextIcon } from './components/icons/DocumentTextIcon';
 import { PresentationChartLineIcon } from './components/icons/PresentationChartLineIcon';
 import { ClipboardDocumentListIcon } from './components/icons/ClipboardDocumentListIcon';
+import { PatientList } from './components/PatientList';
 
 const DashboardIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -124,7 +125,7 @@ export default function App() {
                 </div>
 
                 {activeView === 'dashboard' && <Dashboard />}
-                {activeView === 'patients' && <PlaceholderView title="Patient List" />}
+                {activeView === 'patients' && <PatientList />}
                 {activeView === 'reports' && <PlaceholderView title="Reports" />}
                 {activeView === 'operations' && <PlaceholderView title="Operations" />}
                 {activeView === 'procedures' && <PlaceholderView title="Procedures" />}
